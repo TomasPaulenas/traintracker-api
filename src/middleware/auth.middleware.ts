@@ -1,6 +1,6 @@
 
 import { Request, Response, NextFunction } from "express";
-import { TokenPayload, AuthRequest } from "../types/auth.types";
+import { TokenPayload, AuthRequest } from "../modules/auth/auth.types";
 import jwt from "jsonwebtoken";
 
 const authMiddleware = (req: Request, res: Response, next: NextFunction) => {

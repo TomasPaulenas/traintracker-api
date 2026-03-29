@@ -1,4 +1,5 @@
-import { prisma } from "../lib/prisma"
+import { Prisma } from "../../generated/prisma/browser";
+import { prisma } from "../../lib/prisma";
 
 
 const getAllWorkouts = async (userId: number) => {

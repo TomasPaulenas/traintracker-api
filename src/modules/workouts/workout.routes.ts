@@ -1,7 +1,7 @@
 
 import { Router } from "express";
-import workoutController from "../controllers/workout.controller";
-import authMiddleware from "../middleware/auth.middleware";
+import workoutController from "./workout.controller";
+import authMiddleware from "../../middleware/auth.middleware";
 const router = Router();
 
 router.use(authMiddleware);

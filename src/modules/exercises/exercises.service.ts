@@ -1,6 +1,7 @@
-import { prisma } from "../lib/prisma"
-import { CreateExerciseData } from "../types/exercise.types";
-import { UpdateExerciseData } from "../types/exercise.types";
+import { Prisma } from "../../generated/prisma/browser";
+import { prisma } from "../../lib/prisma";
+import { CreateExerciseData } from "./exercise.types";
+import { UpdateExerciseData } from "./exercise.types";
 
 
 

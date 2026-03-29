@@ -1,7 +1,7 @@
 
-import workoutService from "../services/workouts.services";
+import workoutService from "./workout.service";
 import { Request, Response } from "express";
-import { AuthRequest } from "../types/auth.types";
+import { AuthRequest } from "../auth/auth.types";
 
 const listWorkouts = async (req: Request, res: Response) => {
 

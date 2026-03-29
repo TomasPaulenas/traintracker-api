@@ -48,3 +48,13 @@ model Exercise {
   workoutId Int
   workout   Workout @relation(fields: [workoutId], references: [id], onDelete: Cascade)
 }
+
+model ExerciseTemplate {
+  id     Int    @id @default(autoincrement())
+  name   String @unique
+  description  String?
+
+  createdAt DateTime @default(now())
+
+
+}

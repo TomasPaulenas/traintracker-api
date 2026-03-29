@@ -1,6 +1,6 @@
 
 import { Request, Response } from "express";
-import exercisesService from "../services/exercises.service";
+import exercisesService from "./exercises.service";
 
 
 

@@ -1,8 +1,9 @@
 import express from "express";
 import cors from "cors";
-import workoutRoutes from "./routes/workouts.routes";
-import authRoutes from "./routes/auth.routes";
-import exerxiseRoutes from "./routes/exercise.routes";
+import workoutRoutes from "./modules/workouts/workout.routes";
+import authRoutes from "./modules/auth/auth.routes";
+import exerxiseRoutes from "./modules/exercises/exercise.routes";
+import exerciseTemplatesRoutes from "./modules/exerciseTemplates/exerciseTemplates.routes";
 
 const app = express();
 
@@ -29,5 +30,6 @@ app.get("/api/health", (_req, res) => {
 app.use("/api/workouts", workoutRoutes);
 app.use("/api/auth", authRoutes);
 app.use("/api/exercises", exerxiseRoutes);
+app.use("/api/exercise-templates", exerciseTemplatesRoutes)
 
 export default app;

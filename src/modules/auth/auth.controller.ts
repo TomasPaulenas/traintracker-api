@@ -1,7 +1,7 @@
-import authService from "../services/auth.service";
+import authService from "./auth.service";
 import { Request, Response } from "express";
 import Jwt from "jsonwebtoken";
-import { TokenPayload } from "../types/auth.types";
+import { TokenPayload } from "./auth.types";
 
 
 const createUser = async (req: Request, res: Response) => {
