@@ -1,4 +1,4 @@
-import { Prisma } from "../../generated/prisma/browser";
+import { Prisma } from "@prisma/client";
 import { prisma } from "../../lib/prisma";
 import { CreateExerciseData } from "./exercise.types";
 import { UpdateExerciseData } from "./exercise.types";
